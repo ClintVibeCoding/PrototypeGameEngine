@@ -1,3 +1,8 @@
+## Start here
+
+- Engine spec: `docs/ENGINE_SPEC.md`. Its invariants are non-negotiable, and §11 lists design questions that must not be answered by an agent: stub and flag instead.
+- Process: `docs/PROCESS.md`. Read before starting any feature.
+
 ## Agent skills
 
 ### Issue tracker

@@ -43,20 +43,31 @@ internal static class Phases
         }
 
         // Built by iterating the Snapshot's ordered Nations, never the dictionary.
+        // The Snapshot's derived values are dropped, not carried: they describe World N−1, and only Derive fills World N's.
         return snapshot with
         {
             Tick = tick,
             Nations = snapshot.Nations.Select(n => n with { Money = money[n.NationId] }).ToImmutableArray(),
+            Derived = DerivedValues.None,
         };
     }
 
-    /// <summary>Derive: recomputes derived values from authoritative state (ENGINE_SPEC §3.6). None yet.</summary>
-    public static World Derive(World snapshot, World resolved) => resolved;
+    /// <summary>
+    /// Derive: recomputes Holdings and Money delta from authoritative state, from scratch,
+    /// every Tick (ENGINE_SPEC §3.6), and makes them part of World N.
+    /// </summary>
+    public static World Derive(World snapshot, World resolved) =>
+        resolved with { Derived = DerivedValues.Compute(snapshot, resolved) };
 
     /// <summary>Log: the Chronicle entry for this Tick, one line per Nation in NationId order.</summary>
     public static ChronicleEntry Log(World world) =>
         new(world.Tick, world.Nations
             .OrderBy(n => n.NationId)
-            .Select(n => string.Create(CultureInfo.InvariantCulture, $"{n.Name}: money {n.Money}"))
+            .Select(n =>
+            {
+                var derived = world.Derived.For(n.NationId);
+                return string.Create(CultureInfo.InvariantCulture,
+                    $"{n.Name}: money {n.Money} ({derived.MoneyDelta:+0;-0;+0}), {derived.Holdings} cells");
+            })
             .ToImmutableArray());
 }

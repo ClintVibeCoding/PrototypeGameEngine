@@ -3,501 +3,501 @@ Seed: 1
 Ticks: 50
 
 Tick 1
-Nation 1: money 5
-Nation 2: money 7
-Nation 3: money 9
-Nation 4: money 4
-Nation 5: money 4
-Nation 6: money 7
-Nation 7: money 8
-Nation 8: money 5
+Nation 1: money 5 (+5), 4 cells
+Nation 2: money 7 (+7), 4 cells
+Nation 3: money 9 (+9), 4 cells
+Nation 4: money 4 (+4), 4 cells
+Nation 5: money 4 (+4), 4 cells
+Nation 6: money 7 (+7), 4 cells
+Nation 7: money 8 (+8), 4 cells
+Nation 8: money 5 (+5), 4 cells
 
 Tick 2
-Nation 1: money 7
-Nation 2: money 14
-Nation 3: money 13
-Nation 4: money 10
-Nation 5: money 8
-Nation 6: money 12
-Nation 7: money 12
-Nation 8: money 6
+Nation 1: money 7 (+2), 4 cells
+Nation 2: money 14 (+7), 4 cells
+Nation 3: money 13 (+4), 4 cells
+Nation 4: money 10 (+6), 4 cells
+Nation 5: money 8 (+4), 4 cells
+Nation 6: money 12 (+5), 4 cells
+Nation 7: money 12 (+4), 4 cells
+Nation 8: money 6 (+1), 4 cells
 
 Tick 3
-Nation 1: money 13
-Nation 2: money 22
-Nation 3: money 19
-Nation 4: money 18
-Nation 5: money 8
-Nation 6: money 12
-Nation 7: money 16
-Nation 8: money 7
+Nation 1: money 13 (+6), 4 cells
+Nation 2: money 22 (+8), 4 cells
+Nation 3: money 19 (+6), 4 cells
+Nation 4: money 18 (+8), 4 cells
+Nation 5: money 8 (+0), 4 cells
+Nation 6: money 12 (+0), 4 cells
+Nation 7: money 16 (+4), 4 cells
+Nation 8: money 7 (+1), 4 cells
 
 Tick 4
-Nation 1: money 15
-Nation 2: money 22
-Nation 3: money 24
-Nation 4: money 25
-Nation 5: money 8
-Nation 6: money 21
-Nation 7: money 21
-Nation 8: money 12
+Nation 1: money 15 (+2), 4 cells
+Nation 2: money 22 (+0), 4 cells
+Nation 3: money 24 (+5), 4 cells
+Nation 4: money 25 (+7), 4 cells
+Nation 5: money 8 (+0), 4 cells
+Nation 6: money 21 (+9), 4 cells
+Nation 7: money 21 (+5), 4 cells
+Nation 8: money 12 (+5), 4 cells
 
 Tick 5
-Nation 1: money 18
-Nation 2: money 26
-Nation 3: money 26
-Nation 4: money 30
-Nation 5: money 13
-Nation 6: money 28
-Nation 7: money 29
-Nation 8: money 18
+Nation 1: money 18 (+3), 4 cells
+Nation 2: money 26 (+4), 4 cells
+Nation 3: money 26 (+2), 4 cells
+Nation 4: money 30 (+5), 4 cells
+Nation 5: money 13 (+5), 4 cells
+Nation 6: money 28 (+7), 4 cells
+Nation 7: money 29 (+8), 4 cells
+Nation 8: money 18 (+6), 4 cells
 
 Tick 6
-Nation 1: money 26
-Nation 2: money 33
-Nation 3: money 28
-Nation 4: money 36
-Nation 5: money 21
-Nation 6: money 36
-Nation 7: money 32
-Nation 8: money 19
+Nation 1: money 26 (+8), 4 cells
+Nation 2: money 33 (+7), 4 cells
+Nation 3: money 28 (+2), 4 cells
+Nation 4: money 36 (+6), 4 cells
+Nation 5: money 21 (+8), 4 cells
+Nation 6: money 36 (+8), 4 cells
+Nation 7: money 32 (+3), 4 cells
+Nation 8: money 19 (+1), 4 cells
 
 Tick 7
-Nation 1: money 34
-Nation 2: money 42
-Nation 3: money 31
-Nation 4: money 37
-Nation 5: money 24
-Nation 6: money 45
-Nation 7: money 35
-Nation 8: money 19
+Nation 1: money 34 (+8), 4 cells
+Nation 2: money 42 (+9), 4 cells
+Nation 3: money 31 (+3), 4 cells
+Nation 4: money 37 (+1), 4 cells
+Nation 5: money 24 (+3), 4 cells
+Nation 6: money 45 (+9), 4 cells
+Nation 7: money 35 (+3), 4 cells
+Nation 8: money 19 (+0), 4 cells
 
 Tick 8
-Nation 1: money 40
-Nation 2: money 43
-Nation 3: money 40
-Nation 4: money 45
-Nation 5: money 29
-Nation 6: money 45
-Nation 7: money 42
-Nation 8: money 24
+Nation 1: money 40 (+6), 4 cells
+Nation 2: money 43 (+1), 4 cells
+Nation 3: money 40 (+9), 4 cells
+Nation 4: money 45 (+8), 4 cells
+Nation 5: money 29 (+5), 4 cells
+Nation 6: money 45 (+0), 4 cells
+Nation 7: money 42 (+7), 4 cells
+Nation 8: money 24 (+5), 4 cells
 
 Tick 9
-Nation 1: money 47
-Nation 2: money 45
-Nation 3: money 40
-Nation 4: money 45
-Nation 5: money 34
-Nation 6: money 46
-Nation 7: money 43
-Nation 8: money 32
+Nation 1: money 47 (+7), 4 cells
+Nation 2: money 45 (+2), 4 cells
+Nation 3: money 40 (+0), 4 cells
+Nation 4: money 45 (+0), 4 cells
+Nation 5: money 34 (+5), 4 cells
+Nation 6: money 46 (+1), 4 cells
+Nation 7: money 43 (+1), 4 cells
+Nation 8: money 32 (+8), 4 cells
 
 Tick 10
-Nation 1: money 56
-Nation 2: money 51
-Nation 3: money 45
-Nation 4: money 49
-Nation 5: money 40
-Nation 6: money 54
-Nation 7: money 51
-Nation 8: money 33
+Nation 1: money 56 (+9), 4 cells
+Nation 2: money 51 (+6), 4 cells
+Nation 3: money 45 (+5), 4 cells
+Nation 4: money 49 (+4), 4 cells
+Nation 5: money 40 (+6), 4 cells
+Nation 6: money 54 (+8), 4 cells
+Nation 7: money 51 (+8), 4 cells
+Nation 8: money 33 (+1), 4 cells
 
 Tick 11
-Nation 1: money 62
-Nation 2: money 53
-Nation 3: money 49
-Nation 4: money 57
-Nation 5: money 46
-Nation 6: money 63
-Nation 7: money 58
-Nation 8: money 34
+Nation 1: money 62 (+6), 4 cells
+Nation 2: money 53 (+2), 4 cells
+Nation 3: money 49 (+4), 4 cells
+Nation 4: money 57 (+8), 4 cells
+Nation 5: money 46 (+6), 4 cells
+Nation 6: money 63 (+9), 4 cells
+Nation 7: money 58 (+7), 4 cells
+Nation 8: money 34 (+1), 4 cells
 
 Tick 12
-Nation 1: money 63
-Nation 2: money 60
-Nation 3: money 56
-Nation 4: money 60
-Nation 5: money 46
-Nation 6: money 72
-Nation 7: money 63
-Nation 8: money 34
+Nation 1: money 63 (+1), 4 cells
+Nation 2: money 60 (+7), 4 cells
+Nation 3: money 56 (+7), 4 cells
+Nation 4: money 60 (+3), 4 cells
+Nation 5: money 46 (+0), 4 cells
+Nation 6: money 72 (+9), 4 cells
+Nation 7: money 63 (+5), 4 cells
+Nation 8: money 34 (+0), 4 cells
 
 Tick 13
-Nation 1: money 71
-Nation 2: money 68
-Nation 3: money 56
-Nation 4: money 63
-Nation 5: money 53
-Nation 6: money 77
-Nation 7: money 69
-Nation 8: money 38
+Nation 1: money 71 (+8), 4 cells
+Nation 2: money 68 (+8), 4 cells
+Nation 3: money 56 (+0), 4 cells
+Nation 4: money 63 (+3), 4 cells
+Nation 5: money 53 (+7), 4 cells
+Nation 6: money 77 (+5), 4 cells
+Nation 7: money 69 (+6), 4 cells
+Nation 8: money 38 (+4), 4 cells
 
 Tick 14
-Nation 1: money 75
-Nation 2: money 77
-Nation 3: money 62
-Nation 4: money 63
-Nation 5: money 61
-Nation 6: money 86
-Nation 7: money 72
-Nation 8: money 39
+Nation 1: money 75 (+4), 4 cells
+Nation 2: money 77 (+9), 4 cells
+Nation 3: money 62 (+6), 4 cells
+Nation 4: money 63 (+0), 4 cells
+Nation 5: money 61 (+8), 4 cells
+Nation 6: money 86 (+9), 4 cells
+Nation 7: money 72 (+3), 4 cells
+Nation 8: money 39 (+1), 4 cells
 
 Tick 15
-Nation 1: money 81
-Nation 2: money 82
-Nation 3: money 63
-Nation 4: money 64
-Nation 5: money 70
-Nation 6: money 90
-Nation 7: money 76
-Nation 8: money 44
+Nation 1: money 81 (+6), 4 cells
+Nation 2: money 82 (+5), 4 cells
+Nation 3: money 63 (+1), 4 cells
+Nation 4: money 64 (+1), 4 cells
+Nation 5: money 70 (+9), 4 cells
+Nation 6: money 90 (+4), 4 cells
+Nation 7: money 76 (+4), 4 cells
+Nation 8: money 44 (+5), 4 cells
 
 Tick 16
-Nation 1: money 87
-Nation 2: money 89
-Nation 3: money 72
-Nation 4: money 68
-Nation 5: money 72
-Nation 6: money 91
-Nation 7: money 76
-Nation 8: money 47
+Nation 1: money 87 (+6), 4 cells
+Nation 2: money 89 (+7), 4 cells
+Nation 3: money 72 (+9), 4 cells
+Nation 4: money 68 (+4), 4 cells
+Nation 5: money 72 (+2), 4 cells
+Nation 6: money 91 (+1), 4 cells
+Nation 7: money 76 (+0), 4 cells
+Nation 8: money 47 (+3), 4 cells
 
 Tick 17
-Nation 1: money 89
-Nation 2: money 92
-Nation 3: money 74
-Nation 4: money 73
-Nation 5: money 77
-Nation 6: money 91
-Nation 7: money 80
-Nation 8: money 47
+Nation 1: money 89 (+2), 4 cells
+Nation 2: money 92 (+3), 4 cells
+Nation 3: money 74 (+2), 4 cells
+Nation 4: money 73 (+5), 4 cells
+Nation 5: money 77 (+5), 4 cells
+Nation 6: money 91 (+0), 4 cells
+Nation 7: money 80 (+4), 4 cells
+Nation 8: money 47 (+0), 4 cells
 
 Tick 18
-Nation 1: money 95
-Nation 2: money 92
-Nation 3: money 74
-Nation 4: money 76
-Nation 5: money 83
-Nation 6: money 98
-Nation 7: money 85
-Nation 8: money 52
+Nation 1: money 95 (+6), 4 cells
+Nation 2: money 92 (+0), 4 cells
+Nation 3: money 74 (+0), 4 cells
+Nation 4: money 76 (+3), 4 cells
+Nation 5: money 83 (+6), 4 cells
+Nation 6: money 98 (+7), 4 cells
+Nation 7: money 85 (+5), 4 cells
+Nation 8: money 52 (+5), 4 cells
 
 Tick 19
-Nation 1: money 104
-Nation 2: money 94
-Nation 3: money 82
-Nation 4: money 81
-Nation 5: money 91
-Nation 6: money 100
-Nation 7: money 87
-Nation 8: money 57
+Nation 1: money 104 (+9), 4 cells
+Nation 2: money 94 (+2), 4 cells
+Nation 3: money 82 (+8), 4 cells
+Nation 4: money 81 (+5), 4 cells
+Nation 5: money 91 (+8), 4 cells
+Nation 6: money 100 (+2), 4 cells
+Nation 7: money 87 (+2), 4 cells
+Nation 8: money 57 (+5), 4 cells
 
 Tick 20
-Nation 1: money 106
-Nation 2: money 102
-Nation 3: money 84
-Nation 4: money 83
-Nation 5: money 99
-Nation 6: money 102
-Nation 7: money 88
-Nation 8: money 66
+Nation 1: money 106 (+2), 4 cells
+Nation 2: money 102 (+8), 4 cells
+Nation 3: money 84 (+2), 4 cells
+Nation 4: money 83 (+2), 4 cells
+Nation 5: money 99 (+8), 4 cells
+Nation 6: money 102 (+2), 4 cells
+Nation 7: money 88 (+1), 4 cells
+Nation 8: money 66 (+9), 4 cells
 
 Tick 21
-Nation 1: money 106
-Nation 2: money 103
-Nation 3: money 91
-Nation 4: money 90
-Nation 5: money 101
-Nation 6: money 105
-Nation 7: money 96
-Nation 8: money 70
+Nation 1: money 106 (+0), 4 cells
+Nation 2: money 103 (+1), 4 cells
+Nation 3: money 91 (+7), 4 cells
+Nation 4: money 90 (+7), 4 cells
+Nation 5: money 101 (+2), 4 cells
+Nation 6: money 105 (+3), 4 cells
+Nation 7: money 96 (+8), 4 cells
+Nation 8: money 70 (+4), 4 cells
 
 Tick 22
-Nation 1: money 109
-Nation 2: money 103
-Nation 3: money 95
-Nation 4: money 94
-Nation 5: money 101
-Nation 6: money 113
-Nation 7: money 99
-Nation 8: money 70
+Nation 1: money 109 (+3), 4 cells
+Nation 2: money 103 (+0), 4 cells
+Nation 3: money 95 (+4), 4 cells
+Nation 4: money 94 (+4), 4 cells
+Nation 5: money 101 (+0), 4 cells
+Nation 6: money 113 (+8), 4 cells
+Nation 7: money 99 (+3), 4 cells
+Nation 8: money 70 (+0), 4 cells
 
 Tick 23
-Nation 1: money 110
-Nation 2: money 106
-Nation 3: money 104
-Nation 4: money 101
-Nation 5: money 104
-Nation 6: money 117
-Nation 7: money 100
-Nation 8: money 74
+Nation 1: money 110 (+1), 4 cells
+Nation 2: money 106 (+3), 4 cells
+Nation 3: money 104 (+9), 4 cells
+Nation 4: money 101 (+7), 4 cells
+Nation 5: money 104 (+3), 4 cells
+Nation 6: money 117 (+4), 4 cells
+Nation 7: money 100 (+1), 4 cells
+Nation 8: money 74 (+4), 4 cells
 
 Tick 24
-Nation 1: money 116
-Nation 2: money 109
-Nation 3: money 112
-Nation 4: money 110
-Nation 5: money 106
-Nation 6: money 117
-Nation 7: money 103
-Nation 8: money 81
+Nation 1: money 116 (+6), 4 cells
+Nation 2: money 109 (+3), 4 cells
+Nation 3: money 112 (+8), 4 cells
+Nation 4: money 110 (+9), 4 cells
+Nation 5: money 106 (+2), 4 cells
+Nation 6: money 117 (+0), 4 cells
+Nation 7: money 103 (+3), 4 cells
+Nation 8: money 81 (+7), 4 cells
 
 Tick 25
-Nation 1: money 124
-Nation 2: money 113
-Nation 3: money 113
-Nation 4: money 119
-Nation 5: money 106
-Nation 6: money 120
-Nation 7: money 106
-Nation 8: money 85
+Nation 1: money 124 (+8), 4 cells
+Nation 2: money 113 (+4), 4 cells
+Nation 3: money 113 (+1), 4 cells
+Nation 4: money 119 (+9), 4 cells
+Nation 5: money 106 (+0), 4 cells
+Nation 6: money 120 (+3), 4 cells
+Nation 7: money 106 (+3), 4 cells
+Nation 8: money 85 (+4), 4 cells
 
 Tick 26
-Nation 1: money 125
-Nation 2: money 117
-Nation 3: money 117
-Nation 4: money 125
-Nation 5: money 106
-Nation 6: money 124
-Nation 7: money 115
-Nation 8: money 85
+Nation 1: money 125 (+1), 4 cells
+Nation 2: money 117 (+4), 4 cells
+Nation 3: money 117 (+4), 4 cells
+Nation 4: money 125 (+6), 4 cells
+Nation 5: money 106 (+0), 4 cells
+Nation 6: money 124 (+4), 4 cells
+Nation 7: money 115 (+9), 4 cells
+Nation 8: money 85 (+0), 4 cells
 
 Tick 27
-Nation 1: money 126
-Nation 2: money 121
-Nation 3: money 119
-Nation 4: money 132
-Nation 5: money 112
-Nation 6: money 124
-Nation 7: money 122
-Nation 8: money 93
+Nation 1: money 126 (+1), 4 cells
+Nation 2: money 121 (+4), 4 cells
+Nation 3: money 119 (+2), 4 cells
+Nation 4: money 132 (+7), 4 cells
+Nation 5: money 112 (+6), 4 cells
+Nation 6: money 124 (+0), 4 cells
+Nation 7: money 122 (+7), 4 cells
+Nation 8: money 93 (+8), 4 cells
 
 Tick 28
-Nation 1: money 126
-Nation 2: money 129
-Nation 3: money 119
-Nation 4: money 139
-Nation 5: money 115
-Nation 6: money 124
-Nation 7: money 128
-Nation 8: money 98
+Nation 1: money 126 (+0), 4 cells
+Nation 2: money 129 (+8), 4 cells
+Nation 3: money 119 (+0), 4 cells
+Nation 4: money 139 (+7), 4 cells
+Nation 5: money 115 (+3), 4 cells
+Nation 6: money 124 (+0), 4 cells
+Nation 7: money 128 (+6), 4 cells
+Nation 8: money 98 (+5), 4 cells
 
 Tick 29
-Nation 1: money 135
-Nation 2: money 129
-Nation 3: money 122
-Nation 4: money 143
-Nation 5: money 118
-Nation 6: money 133
-Nation 7: money 135
-Nation 8: money 98
+Nation 1: money 135 (+9), 4 cells
+Nation 2: money 129 (+0), 4 cells
+Nation 3: money 122 (+3), 4 cells
+Nation 4: money 143 (+4), 4 cells
+Nation 5: money 118 (+3), 4 cells
+Nation 6: money 133 (+9), 4 cells
+Nation 7: money 135 (+7), 4 cells
+Nation 8: money 98 (+0), 4 cells
 
 Tick 30
-Nation 1: money 141
-Nation 2: money 131
-Nation 3: money 125
-Nation 4: money 147
-Nation 5: money 119
-Nation 6: money 136
-Nation 7: money 139
-Nation 8: money 103
+Nation 1: money 141 (+6), 4 cells
+Nation 2: money 131 (+2), 4 cells
+Nation 3: money 125 (+3), 4 cells
+Nation 4: money 147 (+4), 4 cells
+Nation 5: money 119 (+1), 4 cells
+Nation 6: money 136 (+3), 4 cells
+Nation 7: money 139 (+4), 4 cells
+Nation 8: money 103 (+5), 4 cells
 
 Tick 31
-Nation 1: money 142
-Nation 2: money 140
-Nation 3: money 134
-Nation 4: money 152
-Nation 5: money 123
-Nation 6: money 138
-Nation 7: money 144
-Nation 8: money 110
+Nation 1: money 142 (+1), 4 cells
+Nation 2: money 140 (+9), 4 cells
+Nation 3: money 134 (+9), 4 cells
+Nation 4: money 152 (+5), 4 cells
+Nation 5: money 123 (+4), 4 cells
+Nation 6: money 138 (+2), 4 cells
+Nation 7: money 144 (+5), 4 cells
+Nation 8: money 110 (+7), 4 cells
 
 Tick 32
-Nation 1: money 146
-Nation 2: money 142
-Nation 3: money 143
-Nation 4: money 161
-Nation 5: money 125
-Nation 6: money 142
-Nation 7: money 152
-Nation 8: money 111
+Nation 1: money 146 (+4), 4 cells
+Nation 2: money 142 (+2), 4 cells
+Nation 3: money 143 (+9), 4 cells
+Nation 4: money 161 (+9), 4 cells
+Nation 5: money 125 (+2), 4 cells
+Nation 6: money 142 (+4), 4 cells
+Nation 7: money 152 (+8), 4 cells
+Nation 8: money 111 (+1), 4 cells
 
 Tick 33
-Nation 1: money 149
-Nation 2: money 142
-Nation 3: money 147
-Nation 4: money 169
-Nation 5: money 132
-Nation 6: money 143
-Nation 7: money 156
-Nation 8: money 116
+Nation 1: money 149 (+3), 4 cells
+Nation 2: money 142 (+0), 4 cells
+Nation 3: money 147 (+4), 4 cells
+Nation 4: money 169 (+8), 4 cells
+Nation 5: money 132 (+7), 4 cells
+Nation 6: money 143 (+1), 4 cells
+Nation 7: money 156 (+4), 4 cells
+Nation 8: money 116 (+5), 4 cells
 
 Tick 34
-Nation 1: money 152
-Nation 2: money 142
-Nation 3: money 147
-Nation 4: money 170
-Nation 5: money 134
-Nation 6: money 149
-Nation 7: money 160
-Nation 8: money 118
+Nation 1: money 152 (+3), 4 cells
+Nation 2: money 142 (+0), 4 cells
+Nation 3: money 147 (+0), 4 cells
+Nation 4: money 170 (+1), 4 cells
+Nation 5: money 134 (+2), 4 cells
+Nation 6: money 149 (+6), 4 cells
+Nation 7: money 160 (+4), 4 cells
+Nation 8: money 118 (+2), 4 cells
 
 Tick 35
-Nation 1: money 155
-Nation 2: money 145
-Nation 3: money 154
-Nation 4: money 172
-Nation 5: money 141
-Nation 6: money 155
-Nation 7: money 165
-Nation 8: money 125
+Nation 1: money 155 (+3), 4 cells
+Nation 2: money 145 (+3), 4 cells
+Nation 3: money 154 (+7), 4 cells
+Nation 4: money 172 (+2), 4 cells
+Nation 5: money 141 (+7), 4 cells
+Nation 6: money 155 (+6), 4 cells
+Nation 7: money 165 (+5), 4 cells
+Nation 8: money 125 (+7), 4 cells
 
 Tick 36
-Nation 1: money 159
-Nation 2: money 147
-Nation 3: money 159
-Nation 4: money 172
-Nation 5: money 144
-Nation 6: money 159
-Nation 7: money 169
-Nation 8: money 132
+Nation 1: money 159 (+4), 4 cells
+Nation 2: money 147 (+2), 4 cells
+Nation 3: money 159 (+5), 4 cells
+Nation 4: money 172 (+0), 4 cells
+Nation 5: money 144 (+3), 4 cells
+Nation 6: money 159 (+4), 4 cells
+Nation 7: money 169 (+4), 4 cells
+Nation 8: money 132 (+7), 4 cells
 
 Tick 37
-Nation 1: money 160
-Nation 2: money 148
-Nation 3: money 159
-Nation 4: money 174
-Nation 5: money 148
-Nation 6: money 165
-Nation 7: money 172
-Nation 8: money 136
+Nation 1: money 160 (+1), 4 cells
+Nation 2: money 148 (+1), 4 cells
+Nation 3: money 159 (+0), 4 cells
+Nation 4: money 174 (+2), 4 cells
+Nation 5: money 148 (+4), 4 cells
+Nation 6: money 165 (+6), 4 cells
+Nation 7: money 172 (+3), 4 cells
+Nation 8: money 136 (+4), 4 cells
 
 Tick 38
-Nation 1: money 169
-Nation 2: money 157
-Nation 3: money 162
-Nation 4: money 178
-Nation 5: money 155
-Nation 6: money 169
-Nation 7: money 177
-Nation 8: money 144
+Nation 1: money 169 (+9), 4 cells
+Nation 2: money 157 (+9), 4 cells
+Nation 3: money 162 (+3), 4 cells
+Nation 4: money 178 (+4), 4 cells
+Nation 5: money 155 (+7), 4 cells
+Nation 6: money 169 (+4), 4 cells
+Nation 7: money 177 (+5), 4 cells
+Nation 8: money 144 (+8), 4 cells
 
 Tick 39
-Nation 1: money 173
-Nation 2: money 162
-Nation 3: money 165
-Nation 4: money 178
-Nation 5: money 162
-Nation 6: money 176
-Nation 7: money 183
-Nation 8: money 153
+Nation 1: money 173 (+4), 4 cells
+Nation 2: money 162 (+5), 4 cells
+Nation 3: money 165 (+3), 4 cells
+Nation 4: money 178 (+0), 4 cells
+Nation 5: money 162 (+7), 4 cells
+Nation 6: money 176 (+7), 4 cells
+Nation 7: money 183 (+6), 4 cells
+Nation 8: money 153 (+9), 4 cells
 
 Tick 40
-Nation 1: money 173
-Nation 2: money 169
-Nation 3: money 169
-Nation 4: money 181
-Nation 5: money 170
-Nation 6: money 182
-Nation 7: money 184
-Nation 8: money 153
+Nation 1: money 173 (+0), 4 cells
+Nation 2: money 169 (+7), 4 cells
+Nation 3: money 169 (+4), 4 cells
+Nation 4: money 181 (+3), 4 cells
+Nation 5: money 170 (+8), 4 cells
+Nation 6: money 182 (+6), 4 cells
+Nation 7: money 184 (+1), 4 cells
+Nation 8: money 153 (+0), 4 cells
 
 Tick 41
-Nation 1: money 175
-Nation 2: money 173
-Nation 3: money 177
-Nation 4: money 190
-Nation 5: money 177
-Nation 6: money 188
-Nation 7: money 193
-Nation 8: money 154
+Nation 1: money 175 (+2), 4 cells
+Nation 2: money 173 (+4), 4 cells
+Nation 3: money 177 (+8), 4 cells
+Nation 4: money 190 (+9), 4 cells
+Nation 5: money 177 (+7), 4 cells
+Nation 6: money 188 (+6), 4 cells
+Nation 7: money 193 (+9), 4 cells
+Nation 8: money 154 (+1), 4 cells
 
 Tick 42
-Nation 1: money 182
-Nation 2: money 180
-Nation 3: money 184
-Nation 4: money 194
-Nation 5: money 178
-Nation 6: money 191
-Nation 7: money 197
-Nation 8: money 154
+Nation 1: money 182 (+7), 4 cells
+Nation 2: money 180 (+7), 4 cells
+Nation 3: money 184 (+7), 4 cells
+Nation 4: money 194 (+4), 4 cells
+Nation 5: money 178 (+1), 4 cells
+Nation 6: money 191 (+3), 4 cells
+Nation 7: money 197 (+4), 4 cells
+Nation 8: money 154 (+0), 4 cells
 
 Tick 43
-Nation 1: money 190
-Nation 2: money 189
-Nation 3: money 189
-Nation 4: money 199
-Nation 5: money 178
-Nation 6: money 192
-Nation 7: money 197
-Nation 8: money 155
+Nation 1: money 190 (+8), 4 cells
+Nation 2: money 189 (+9), 4 cells
+Nation 3: money 189 (+5), 4 cells
+Nation 4: money 199 (+5), 4 cells
+Nation 5: money 178 (+0), 4 cells
+Nation 6: money 192 (+1), 4 cells
+Nation 7: money 197 (+0), 4 cells
+Nation 8: money 155 (+1), 4 cells
 
 Tick 44
-Nation 1: money 198
-Nation 2: money 191
-Nation 3: money 194
-Nation 4: money 208
-Nation 5: money 184
-Nation 6: money 200
-Nation 7: money 197
-Nation 8: money 164
+Nation 1: money 198 (+8), 4 cells
+Nation 2: money 191 (+2), 4 cells
+Nation 3: money 194 (+5), 4 cells
+Nation 4: money 208 (+9), 4 cells
+Nation 5: money 184 (+6), 4 cells
+Nation 6: money 200 (+8), 4 cells
+Nation 7: money 197 (+0), 4 cells
+Nation 8: money 164 (+9), 4 cells
 
 Tick 45
-Nation 1: money 204
-Nation 2: money 193
-Nation 3: money 198
-Nation 4: money 217
-Nation 5: money 190
-Nation 6: money 208
-Nation 7: money 201
-Nation 8: money 168
+Nation 1: money 204 (+6), 4 cells
+Nation 2: money 193 (+2), 4 cells
+Nation 3: money 198 (+4), 4 cells
+Nation 4: money 217 (+9), 4 cells
+Nation 5: money 190 (+6), 4 cells
+Nation 6: money 208 (+8), 4 cells
+Nation 7: money 201 (+4), 4 cells
+Nation 8: money 168 (+4), 4 cells
 
 Tick 46
-Nation 1: money 207
-Nation 2: money 198
-Nation 3: money 200
-Nation 4: money 224
-Nation 5: money 194
-Nation 6: money 212
-Nation 7: money 210
-Nation 8: money 170
+Nation 1: money 207 (+3), 4 cells
+Nation 2: money 198 (+5), 4 cells
+Nation 3: money 200 (+2), 4 cells
+Nation 4: money 224 (+7), 4 cells
+Nation 5: money 194 (+4), 4 cells
+Nation 6: money 212 (+4), 4 cells
+Nation 7: money 210 (+9), 4 cells
+Nation 8: money 170 (+2), 4 cells
 
 Tick 47
-Nation 1: money 215
-Nation 2: money 205
-Nation 3: money 202
-Nation 4: money 224
-Nation 5: money 199
-Nation 6: money 213
-Nation 7: money 213
-Nation 8: money 177
+Nation 1: money 215 (+8), 4 cells
+Nation 2: money 205 (+7), 4 cells
+Nation 3: money 202 (+2), 4 cells
+Nation 4: money 224 (+0), 4 cells
+Nation 5: money 199 (+5), 4 cells
+Nation 6: money 213 (+1), 4 cells
+Nation 7: money 213 (+3), 4 cells
+Nation 8: money 177 (+7), 4 cells
 
 Tick 48
-Nation 1: money 221
-Nation 2: money 209
-Nation 3: money 206
-Nation 4: money 232
-Nation 5: money 205
-Nation 6: money 221
-Nation 7: money 217
-Nation 8: money 181
+Nation 1: money 221 (+6), 4 cells
+Nation 2: money 209 (+4), 4 cells
+Nation 3: money 206 (+4), 4 cells
+Nation 4: money 232 (+8), 4 cells
+Nation 5: money 205 (+6), 4 cells
+Nation 6: money 221 (+8), 4 cells
+Nation 7: money 217 (+4), 4 cells
+Nation 8: money 181 (+4), 4 cells
 
 Tick 49
-Nation 1: money 224
-Nation 2: money 213
-Nation 3: money 209
-Nation 4: money 236
-Nation 5: money 211
-Nation 6: money 221
-Nation 7: money 219
-Nation 8: money 187
+Nation 1: money 224 (+3), 4 cells
+Nation 2: money 213 (+4), 4 cells
+Nation 3: money 209 (+3), 4 cells
+Nation 4: money 236 (+4), 4 cells
+Nation 5: money 211 (+6), 4 cells
+Nation 6: money 221 (+0), 4 cells
+Nation 7: money 219 (+2), 4 cells
+Nation 8: money 187 (+6), 4 cells
 
 Tick 50
-Nation 1: money 224
-Nation 2: money 213
-Nation 3: money 213
-Nation 4: money 244
-Nation 5: money 220
-Nation 6: money 225
-Nation 7: money 220
-Nation 8: money 192
+Nation 1: money 224 (+0), 4 cells
+Nation 2: money 213 (+0), 4 cells
+Nation 3: money 213 (+4), 4 cells
+Nation 4: money 244 (+8), 4 cells
+Nation 5: money 220 (+9), 4 cells
+Nation 6: money 225 (+4), 4 cells
+Nation 7: money 220 (+1), 4 cells
+Nation 8: money 192 (+5), 4 cells

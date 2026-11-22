@@ -28,6 +28,13 @@ The parallelism pattern Paradox is moving toward is the spec's tick phases, retr
 - **Their proposed next step** (ACCU 2023 talk): entities that read only other entities' *public* data, with no ordering requirement. In this spec, that's the frozen snapshot plus `WhatASeesOfB`.
 - **Victoria 3** needs an extra sort step after parallel work to keep multiplayer in sync. Read-old/write-new with a deterministic Resolve order makes that the default instead of a patch.
 
+## What CK3's "Anatomy of a Game: Simulation Optimization" adds (1.5, 2021)
+
+- **Choose in parallel, apply serially, skip the no-ops.** Combat phase events moved out of serial script into a threaded pre-update: triggers and weights for every character are evaluated in parallel, picks are queued, and the main update applies them. When nothing is picked, which is most days, that character is skipped entirely. The combat manager dropped from 12.5% of the serial tick to under 5%. That's Decide/Resolve plus §6's "most ticks, nothing is decided at all", measured.
+- **Storage layout matters, and it pays to keep it swappable.** Reaching a character's scripted variables meant following a chain of five pointers, which meant cache misses. Moving them into one dedicated manager cut that serial work from 5.5% to 1.4% of the tick. §3.3 keeps decision logic separate from storage so layout can change later without touching decisions. This is the kind of change that buys.
+- **Script is the slowest path.** Simple threshold rules (character weight) run through the event/script system showed up out of all proportion, and moving them into code removed them from the profile. The spec has no script layer, but if one ever arrives for content or modding, that's where the cost lands.
+- **Measure, don't eyeball.** Nightly automated runs log tick times and graph the trend; a profiler comes out when the graph moves. Your determinism test plus the entity-count guard suggested below would be the same habit, starting from day one.
+
 ## What EU5 1.4 adds (newest Jomini-era game)
 
 - **Cause:** Paradox attributes EU5's slowdown over a campaign mainly to algorithms that don't scale well, which is game code again, not the engine.
@@ -56,9 +63,7 @@ HOI4 has a built-in profiler: run `imgui show profiler` from the console. It sho
 
 ## Not read
 
-- The Imperator "Anatomy of a Game: Simulation Optimization" post sits behind a browser check, and no mirror turned up.
-
-None of the sources that were read publish AI cost numbers.
+Nothing outstanding. None of the sources publish AI cost numbers.
 
 ## Sources
 
@@ -69,5 +74,6 @@ None of the sources that were read publish AI cost numbers.
 - [HOI4 Dev Diary: A Tech Lead's Life](https://admin-forum.paradoxplaza.com/forum/developer-diary/hoi4-dev-diary-a-tech-leads-life.1496472/page-5)
 - [HOI4 Developer Diary: Performance (1.13 changelog)](https://admin-forum.paradoxplaza.com/forum/developer-diary/developer-diary-performance-changelog.1600827)
 - [Mathieu Ropert, "Multithreading Model in Paradox Games: Past, Present and Future", ACCU 2023](https://accu.org/conf-docs/PDFs_2023/XMultiThreadingModelinParadoxGamesPastPresentandFuture.pdf)
+- [CK3 Anatomy of a Game: Simulation Optimization](https://forum.paradoxplaza.com/forum/threads/anatomy-of-a-game-simulation-optimization.1484301/) (text supplied by Clint; the page is behind a browser check)
 - [EU5 Tinto Talks #123: 1.4 Performance and Campaign Timeline](https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-123-1-4-performance-and-campaign-timeline.1941000/)
 - [Stellaris Dev Diary #370: 4.0 Changes Part 4](https://admin-forum.paradoxplaza.com/forum/developer-diary/stellaris-dev-diary-370-4-0-changes-part-4.1728047)

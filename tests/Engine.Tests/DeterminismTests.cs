@@ -26,6 +26,26 @@ public class DeterminismTests
     }
 
     /// <summary>
+    /// Proves the Seed is actually used. The header prints the Seed, so comparing whole
+    /// Chronicles would pass even with the generator ignored: compare only the Tick entries.
+    /// </summary>
+    [Fact]
+    public void Different_seeds_give_different_histories()
+    {
+        string seed1 = TickEntries(Simulation.Run(seed: 1, ticks: 50));
+        string seed2 = TickEntries(Simulation.Run(seed: 2, ticks: 50));
+
+        Assert.NotEqual(seed1, seed2);
+    }
+
+    // Everything after the header, which ends at the first blank line.
+    private static string TickEntries(byte[] chronicle)
+    {
+        string text = System.Text.Encoding.UTF8.GetString(chronicle);
+        return text[(text.IndexOf("\n\n", StringComparison.Ordinal) + 2)..];
+    }
+
+    /// <summary>
     /// The committed file was produced in another process, usually on another machine and OS,
     /// so this catches hash-randomization, locale and line-ending differences that a
     /// same-process comparison can't see.

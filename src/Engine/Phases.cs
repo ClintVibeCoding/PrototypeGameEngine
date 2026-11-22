@@ -17,11 +17,38 @@ internal static class Phases
         snapshot.Nations.OrderBy(n => n.NationId).SelectMany(n => Decide(snapshot, n)).ToImmutableArray();
 
     /// <summary>Decide: pure (ENGINE_SPEC §3.3). Reads the Snapshot, changes nothing, returns Intentions.</summary>
-    public static ImmutableArray<Intention> Decide(World snapshot, Nation nation) => [];
+    /// <remarks>No generator: if Decide ever needs randomness it gets its own, seeded from (Seed, tick, Nation).</remarks>
+    public static ImmutableArray<Intention> Decide(World snapshot, Nation nation) =>
+        [new PlaceholderIntention(nation.NationId)];
 
-    /// <summary>Resolve: the only Phase that produces new state. Builds World N from World N−1.</summary>
-    public static World Resolve(World snapshot, ImmutableArray<Intention> intentions, int tick) =>
-        snapshot with { Tick = tick };
+    /// <summary>
+    /// Resolve: the only Phase that produces new state, and the only one given the generator.
+    /// Builds World N from World N−1, applying Intentions in NationId order so that results
+    /// never depend on collection ordering. Draw order is part of the Chronicle's contract.
+    /// </summary>
+    public static World Resolve(World snapshot, ImmutableArray<Intention> intentions, SeededGenerator generator, int tick)
+    {
+        var money = snapshot.Nations.ToDictionary(n => n.NationId, n => n.Money);
+
+        foreach (var intention in intentions.OrderBy(i => i.NationId))
+        {
+            switch (intention)
+            {
+                case PlaceholderIntention placeholder:
+                    money[placeholder.NationId] += generator.NextBelow(10);
+                    break;
+                default:
+                    throw new InvalidOperationException($"Resolve has no rule for {intention.GetType().Name}.");
+            }
+        }
+
+        // Built by iterating the Snapshot's ordered Nations, never the dictionary.
+        return snapshot with
+        {
+            Tick = tick,
+            Nations = snapshot.Nations.Select(n => n with { Money = money[n.NationId] }).ToImmutableArray(),
+        };
+    }
 
     /// <summary>Derive: recomputes derived values from authoritative state (ENGINE_SPEC §3.6). None yet.</summary>
     public static World Derive(World snapshot, World resolved) => resolved;

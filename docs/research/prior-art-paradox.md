@@ -28,6 +28,13 @@ The parallelism pattern Paradox is moving toward is the spec's tick phases, retr
 - **Their proposed next step** (ACCU 2023 talk): entities that read only other entities' *public* data, with no ordering requirement. In this spec, that's the frozen snapshot plus `WhatASeesOfB`.
 - **Victoria 3** needs an extra sort step after parallel work to keep multiplayer in sync. Read-old/write-new with a deterministic Resolve order makes that the default instead of a patch.
 
+## What EU5 1.4 adds (newest Jomini-era game)
+
+- **Cause:** Paradox attributes EU5's slowdown over a campaign mainly to algorithms that don't scale well, which is game code again, not the engine.
+- **UI leaking into the sim:** a large share of 1.4's gains came from reworking how the UI handles data on the backend, and some algorithms built for UI needs hurt game speed. The spec already guards against this: presentation has zero effect on outcomes (§3.5), and the Chronicle is written in its own Log phase. Worth keeping that wall high when map painting arrives.
+- **Cadence as a design choice:** EU5 dropped hourly ticks for daily ones, for about a 10–15% speedup, but Paradox says the reason was pacing, not performance. That supports keeping tick length in §11 as an open *design* question rather than treating it as a performance setting.
+- **Overall:** they target ticks 40–50% faster than 1.3, with the largest gains in mid and late game.
+
 ## Correction
 
 **The engine isn't the culprit.** Paradox's tech lead says Clausewitz itself mostly handles graphics, networking and loading/saving, and that the bulk of the bottleneck is in each game's own simulation. §12 should say "Paradox-style *simulations*", not "engines". Wording only; the reasoning doesn't change.
@@ -37,7 +44,7 @@ The parallelism pattern Paradox is moving toward is the spec's tick phases, retr
 These don't conflict with §9's "do not optimize". They're notes so that future-us recognizes the problem when the profile shows up.
 
 1. **§3.6 "never maintained incrementally" vs. Victoria 3's biggest cost.** Modifiers were Victoria 3's main cost driver. They fixed it by tracking which values were dirty and recomputing only those, which is incremental maintenance. At 32 cells, full recompute is right. At global scale, derived-value recompute is where the spec's own rule will be tested first.
-2. **Resolve becomes the serial bottleneck, and big nations become the long pole.** Victoria 3's employment has a serial core because it creates and destroys objects; HOI4's serial parts are combat and movement. Under this spec all mutation is in Resolve, so Resolve is where serial cost collects. Separately, Paradox's work per country varies by more than 100× (Luxembourg vs. Russia), and a parallel system only finishes when its slowest entity does. HOI4 ended up rebalancing work across cores based on how long each country's last hourly update took. §9 is right that nation *count* is nearly free. Variance in per-nation cost isn't, once Decide runs in parallel. This touches the open simultaneous-conflict rule in §11, so it stays a note.
+2. **Resolve becomes the serial bottleneck, and big nations become the long pole.** Victoria 3's employment has a serial core because it creates and destroys objects; HOI4's serial parts are combat and movement. Under this spec all mutation is in Resolve, so Resolve is where serial cost collects. Separately, Paradox's work per country varies by more than 100× (Luxembourg vs. Russia), and a parallel system only finishes when its slowest entity does. HOI4 ended up rebalancing work across cores based on how long each country's last hourly update took. EU5 1.4 hit the same wall spreading AI work for about 800 countries across cores when one nation can hold 200 locations and another just 1. §9 is right that nation *count* is nearly free. Variance in per-nation cost isn't, once Decide runs in parallel. This touches the open simultaneous-conflict rule in §11, so it stays a note.
 
 ## One cheap guard worth considering
 
@@ -50,7 +57,6 @@ HOI4 has a built-in profiler: run `imgui show profiler` from the console. It sho
 ## Not read
 
 - The Imperator "Anatomy of a Game: Simulation Optimization" post sits behind a browser check, and no mirror turned up.
-- EU5's Tinto Talks #123 (1.4 performance) wasn't fetched. Worth a follow-up, since EU5 is the newest Jomini-era simulation.
 
 None of the sources that were read publish AI cost numbers.
 
@@ -63,4 +69,5 @@ None of the sources that were read publish AI cost numbers.
 - [HOI4 Dev Diary: A Tech Lead's Life](https://admin-forum.paradoxplaza.com/forum/developer-diary/hoi4-dev-diary-a-tech-leads-life.1496472/page-5)
 - [HOI4 Developer Diary: Performance (1.13 changelog)](https://admin-forum.paradoxplaza.com/forum/developer-diary/developer-diary-performance-changelog.1600827)
 - [Mathieu Ropert, "Multithreading Model in Paradox Games: Past, Present and Future", ACCU 2023](https://accu.org/conf-docs/PDFs_2023/XMultiThreadingModelinParadoxGamesPastPresentandFuture.pdf)
+- [EU5 Tinto Talks #123: 1.4 Performance and Campaign Timeline](https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-123-1-4-performance-and-campaign-timeline.1941000/)
 - [Stellaris Dev Diary #370: 4.0 Changes Part 4](https://admin-forum.paradoxplaza.com/forum/developer-diary/stellaris-dev-diary-370-4-0-changes-part-4.1728047)

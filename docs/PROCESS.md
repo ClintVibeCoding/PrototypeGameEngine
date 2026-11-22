@@ -9,7 +9,7 @@
 | Director | Clint | Decides what to build, answers grilling, approves ticket breakdowns, merges one-way doors |
 | Planner | Sophie (Claude, chat) | Grilling, specs, tickets, reviewing findings, updating this doc |
 | Builder | Claude Code (DadPC) | Implements tickets test-first, keeps CI green, merges two-way doors |
-| Finder | Local model (Qwen 9B via LM Studio / Bionic) | Bulk reading: narrow review passes, log digests, exploration notes. **Finds, never approves.** |
+| Finder | Local model (Qwen3.5 9B via Bionic's local API) | Bulk reading: narrow review passes, log digests, exploration notes. **Finds, never approves.** |
 | Gate | CI (GitHub Actions) | Lint, typecheck, tests. Deterministic, costs no tokens, decides merge eligibility |
 
 ## The loop
@@ -57,6 +57,6 @@ Two-way and small: Claude Code may merge once the gate is green. Anything else: 
 
 ## Open questions for the first run
 
-- Can the finder step run unattended? Bionic documents no CLI or scheduling. Fallback: a script calling LM Studio's local server.
-- Does Matt's `code-review` skill load into Bionic as-is?
-- First calibration: plant known bugs on a branch, run the finder, count what it catches. That number decides how much the loop trusts step 6.
+- ~~Can the finder step run unattended?~~ **Decided, not yet proven:** a script calls Bionic's built-in Local Model API (`http://localhost:1235/v1`), not Bionic's headless beta. LM Studio isn't needed. Spec #5; ticket #8 proves the unattended run and closes this.
+- ~~Does Matt's `code-review` skill load into Bionic as-is?~~ **Answered:** it loads, but it isn't used for the Finder. It's a two-axis diff review run by parallel sub-agents, which is the Judge's kind of work. Finder questions are plain files in `docs/finder/questions/`, one question each.
+- First calibration: plant known bugs on a branch, run the finder, count what it catches. That number decides how much the loop trusts step 6. Ticket #9.

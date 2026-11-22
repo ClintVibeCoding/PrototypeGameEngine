@@ -1,0 +1,8 @@
+T:System.Random;Use the engine's own seeded generator (ADR 0001, ENGINE_SPEC 3.1)
+P:System.DateTime.Now;No wall clock in the engine (ENGINE_SPEC 3.1, 3.5)
+P:System.DateTime.UtcNow;No wall clock in the engine (ENGINE_SPEC 3.1, 3.5)
+P:System.DateTimeOffset.Now;No wall clock in the engine (ENGINE_SPEC 3.1, 3.5)
+P:System.DateTimeOffset.UtcNow;No wall clock in the engine (ENGINE_SPEC 3.1, 3.5)
+P:System.Environment.TickCount;No wall clock in the engine (ENGINE_SPEC 3.1, 3.5)
+P:System.Environment.TickCount64;No wall clock in the engine (ENGINE_SPEC 3.1, 3.5)
+M:System.Guid.NewGuid;Non-deterministic (ENGINE_SPEC 3.1)

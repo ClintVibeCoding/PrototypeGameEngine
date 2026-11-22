@@ -1,0 +1,5 @@
+# Checked-in text is LF-only, whatever core.autocrlf says on the machine.
+* text=auto eol=lf
+
+# Expected Chronicles are compared byte for byte: git must never touch them.
+*.chronicle -text

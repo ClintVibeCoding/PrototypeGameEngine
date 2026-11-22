@@ -16,6 +16,7 @@ public static class Simulation
     {
         ArgumentOutOfRangeException.ThrowIfNegative(ticks);
 
+        var generator = new SeededGenerator(seed);
         var world = World.Starting();
         var entries = new List<ChronicleEntry>(ticks);
 
@@ -24,7 +25,7 @@ public static class Simulation
         {
             var snapshot = Phases.Observe(world);
             var intentions = Phases.DecideAll(snapshot);
-            var resolved = Phases.Resolve(snapshot, intentions, tick);
+            var resolved = Phases.Resolve(snapshot, intentions, generator, tick);
             world = Phases.Derive(snapshot, resolved);
             entries.Add(Phases.Log(world));
         }
